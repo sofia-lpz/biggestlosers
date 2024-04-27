@@ -2,7 +2,7 @@
 from __future__ import print_function
 
 import argparse
-import cPickle as pickle
+import pickle as pickle
 import pprint as pp
 import numpy as np
 import time
