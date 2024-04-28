@@ -2,9 +2,9 @@ import json
 import numpy as np
 import torch
 import torch.nn as nn
-import forwardproppers
-import sb_util
-import kath_util
+import lib.forwardproppers
+import lib.sb_util
+import lib.kath_util
 
 
 class ExampleAndMetadata(object):
