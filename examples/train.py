@@ -238,6 +238,7 @@ def test_sb(loader, epoch, sb):
     test_loss /= total
     val_acc = correct / total
 
+#PRINT HERE
     print('============ EPOCH {} ============'.format(epoch))
     print('FPs: {} / {}\nBPs: {} / {}\nTest loss: {:.6f}\nTest acc: {:.3f} \nTime elapsed: {:.2f}s'.format(
                 sb.logger.global_num_forwards,
