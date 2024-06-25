@@ -60,7 +60,7 @@ class CIFAR10(Dataset):
         ])
         testset = lib.cifar.CIFAR10(root='./data',
                                     train=False,
-                                    download=False,
+                                    download=True,
                                     transform=transform_test,
                                     randomize_labels=randomize_labels)
         self.testloader = torch.utils.data.DataLoader(testset,
@@ -85,7 +85,7 @@ class CIFAR10(Dataset):
             ])
         self.trainset = lib.cifar.CIFAR10(root='./data',
                                           train=True,
-                                          download=False,
+                                          download=True,
                                           transform=transform_train,
                                           randomize_labels=randomize_labels)
 
