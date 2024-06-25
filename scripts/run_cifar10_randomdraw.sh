@@ -19,11 +19,11 @@ SEED=1337
 
 EXP_NAME=$EXP_PREFIX
 
-mkdir "/proj/BigLearning/XXXX-3/output/cifar10/"
+mkdir -p "/proj/BigLearning/XXXX-3/output/cifar10/"
 OUTPUT_DIR="/proj/BigLearning/XXXX-3/output/cifar10/"$EXP_NAME
 PICKLE_DIR=$OUTPUT_DIR/pickles
-mkdir $OUTPUT_DIR
-mkdir $PICKLE_DIR
+mkdir -p $OUTPUT_DIR
+mkdir -p $PICKLE_DIR
 
 git rev-parse HEAD &> $OUTPUT_DIR/sha
 
@@ -35,7 +35,7 @@ do
 
   echo $OUTPUT_DIR/$OUTPUT_FILE
 
-  time python main.py \
+  time /home/melendeze/Desktop/biggestlosers/myenv/bin/python /home/melendeze/Desktop/biggestlosers/main.py \
     --sb-strategy=$SAMPLING_STRATEGY \
     --net=$NET \
     --batch-size=$BATCH_SIZE \
